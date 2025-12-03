@@ -1,4 +1,4 @@
-/*
+*
 Theme Name: Twenty Twenty-Five Child JalanO
 Theme URI: https://github.com/yourusername/wordpress-childtheme-JalanO
 Description: A child theme of Twenty Twenty-Five for my assignment.
@@ -6,4 +6,196 @@ Author: JalanO
 Template: twentytwentyfive
 Version: 1.0.0
 Text Domain: twentytwentyfive-child-jalano
-*/
+*/ 
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #f5f4ff;
+    margin: 0;
+    padding: 0;
+    color: #2e2c45;
+}
+
+/* 
+   FRONT PAGE (Blog Home)*/
+
+.custom-front-page {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: auto;
+}
+
+/* HERO SECTION */
+.hero-area {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #7a5cff, #a890ff);
+    border-radius: 12px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-sub {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* POSTS SECTION */
+.front-query-loop .section-title {
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 28px;
+}
+
+/* POST CARDS */
+.post-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.09);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    padding-bottom: 20px;
+}
+
+.post-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+}
+
+.post-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.featured-img img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.post-title {
+    padding: 15px;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.post-excerpt {
+    padding: 0 15px 10px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.read-more {
+    display: inline-block;
+    margin-left: 15px;
+    padding: 8px 12px;
+    background: #7a5cff;
+    color: #fff !important;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background 0.2s ease;
+}
+
+.read-more:hover {
+    background: #5b44d0;
+}
+
+/* PAGINATION */
+
+.pagination {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.pagination a {
+    text-decoration: none;
+    background: #ddd;
+    padding: 8px 14px;
+    border-radius: 4px;
+    color: #333;
+    margin: 0 6px;
+    transition: 0.2s;
+}
+
+.pagination a:hover {
+    background: #b5b5ff;
+    color: #000;
+}
+
+/* 
+   SINGLE POST TEMPLATE */
+
+.custom-single {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.single-wrapper {
+    background: #fff;
+    border-radius: 14px;
+    padding: 40px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.single-header {
+    margin-bottom: 25px;
+}
+
+.single-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.single-meta {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.single-featured-img img {
+    border-radius: 12px;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.single-content {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+.single-content p {
+    margin-bottom: 18px;
+}
+
+.single-footer {
+    margin-top: 35px;
+}
+
+.back-home {
+    background: #7a5cff;
+    color: #fff !important;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.back-home:hover {
+    background: #5b44d0;
+}
